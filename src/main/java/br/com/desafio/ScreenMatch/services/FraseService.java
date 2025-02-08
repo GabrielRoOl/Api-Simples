@@ -27,5 +27,12 @@ public class FraseService {
                 .map(FraseDTO::new).collect(Collectors.toList());
     }
 
+    public FraseDTO findByRandom(){
+        Frase frase = repository.findByRandom();
+        return new FraseDTO(frase.getFrase(), frase.getPoster(),
+                frase.getPersonagem(), frase.getTitulo());
+
+    }
+
 
 }
