@@ -7,18 +7,18 @@ public class FraseDTO {
     private String titulo;
     private String frase;
     private String personagem;
-    private String imgUrl;
+    private String poster;
 
-    public FraseDTO(String frase, String imgUrl, String personagem, String titulo) {
+    public FraseDTO(String frase, String poster, String personagem, String titulo) {
         this.frase = frase;
-        this.imgUrl = imgUrl;
+        this.poster = poster;
         this.personagem = personagem;
         this.titulo = titulo;
     }
 
     public FraseDTO(Frase f) {
         this.frase = f.getFrase();
-        this.imgUrl = f.getImgUrl();
+        this.poster = f.getPoster();
         this.personagem = f.getPersonagem();
         this.titulo = f.getTitulo();
     }
@@ -31,12 +31,12 @@ public class FraseDTO {
         this.frase = frase;
     }
 
-    public String getImgUrl() {
-        return imgUrl;
+    public String getPoster() {
+        return poster;
     }
 
-    public void setImgUrl(String imgUrl) {
-        this.imgUrl = imgUrl;
+    public void setPoster(String poster) {
+        this.poster = poster;
     }
 
     public String getPersonagem() {

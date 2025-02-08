@@ -12,12 +12,13 @@ public class Frase {
     private String titulo;
     private String frase;
     private String personagem;
-    private String imgUrl;
+    private String poster;
 
+    public Frase(){}
 
-    public Frase(Long id, String imgUrl, String personagem, String titulo, String frase) {
+    public Frase(Long id, String poster, String personagem, String titulo, String frase) {
         this.id = id;
-        this.imgUrl = imgUrl;
+        this.poster = poster;
         this.personagem = personagem;
         this.titulo = titulo;
         this.frase = frase;
@@ -31,12 +32,12 @@ public class Frase {
         this.id = id;
     }
 
-    public String getImgUrl() {
-        return imgUrl;
+    public String getPoster() {
+        return poster;
     }
 
-    public void setImgUrl(String imgUrl) {
-        this.imgUrl = imgUrl;
+    public void setPoster(String poster) {
+        this.poster = poster;
     }
 
     public String getPersonagem() {

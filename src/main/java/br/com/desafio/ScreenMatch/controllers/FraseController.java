@@ -14,6 +14,8 @@ public class FraseController {
     FraseService service;
 
     @GetMapping(value = "/series/frases")
-    public FraseDTO
+    public FraseDTO findById(){
+        return service.findById();
+    }
 
 }
